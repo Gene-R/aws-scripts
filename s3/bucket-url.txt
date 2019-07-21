@@ -1,0 +1,25 @@
+https://s3.amazonaws.com/123-567-my-test-bucket-us-east-2/max-html.tar
+
+<Error>
+<Code>PermanentRedirect</Code>
+<Message>
+The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+</Message>
+<Endpoint>123-567-my-test-bucket-us-east-2.s3.amazonaws.com</Endpoint>
+<Bucket>123-567-my-test-bucket-us-east-2</Bucket>
+<RequestId>ACA8FF6CAB94F662</RequestId>
+<HostId>
+Q5g8trJQto8PWmze8JMOucQdQGq77WhFFsNdL+lK4w4j1u122TCD6d5FC3xo+keHmGekrOvqpJE=
+</HostId>
+</Error>
+
+
+
+
+Meaning you have to use the following URL to access your file in the bucket with public access:
+123-567-my-test-bucket-us-east-2.s3.amazonaws.com/max-html.tar
+
+to access static web site
+http://my-guinea-pig-website.s3.us-east-2.amazonaws.com/index.html
+
+
