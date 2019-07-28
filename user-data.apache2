@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get -y install apache2
+sudo apt-get -y install awscli
+sudo apt-get -y install python3
+echo "AAAA" > /tmp/index.html
+sudo cp -f /tmp/index.html /var/www/html/
+sudo service apache2 start
