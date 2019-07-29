@@ -1,0 +1,38 @@
+VPC - it is much like home or corporate network where you can deploy db servers, and other servers, apps. In general  - to host servers.
+Cloud computing is used to setup you servers.
+
+- create your vpc
+- NACL
+- Security group
+- Routing tables
+- Internet GW makes you subnet publically accessible. Make your private subnet public from Inboud perspective.
+- NAT gateway connect you private subnet with INternet, bit only for Outbound traffic. E.g. to download something (updates, etc)
+- Virtual GW - creates connection between your VPC and you your corporate network
+- VPC peering - is used to connect two different VPCs to allow communication between private subnetworks.
+For cross region you can also setup peering or communcation over public Elastic IP addresses vor secured protocls (e.g. ssh).
+- Direct connect - direct dedicated connection to AWS - it is bypass Internet.
+
+If internet has a internet gateway in its route table, then it is a public subnet. Otherwise it's not.
+
+NAT gateways provides better availability and bandwidth compared to NAT instances
+
+NAT instance is launched from NAT AMI instance - typically linux image configured to perform NAT
+NAT Gateway is a managed service - does not require any administration efforts. It allows you to connect your private subnet to Internet.
+
+NACL rules - the first mutch will be used.
+
+default limits:
+5 VPC per region
+200 subnet per VPC
+5 elastic IP address per Region
+
+Active Directory - is basically authentication database where some companies keep user and passwords
+
+
+ASN - anonymous system number used by BGP (border gateway protocol)
+
+VPC has - CIDR bloks and NACL
+Subnet has - Route tables and NACL
+
+
+https://www.whizlabs.com/blog/aws-solutions-architect-associate-exam-questions/

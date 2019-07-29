@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=example -DartifactId=my-lambda-func -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
