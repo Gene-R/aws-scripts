@@ -6,5 +6,5 @@ import java.util.Map;
 
 public interface MyLambdaService {
     @LambdaFunction(functionName = "javaTestFunc")
-    String doSomething(Map<String, Object> input);
+    ResponseClass doSomething(RequestClass request);
 }
