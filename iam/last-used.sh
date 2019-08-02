@@ -1,0 +1,1 @@
+aws iam get-access-key-last-used --access-key-id AKIA35UPFVAMC62LKAVJ
